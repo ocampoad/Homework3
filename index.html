@@ -24,29 +24,30 @@
       <div class="card-footer">
         <button id="generate" class="btn">Generate Password</button>
         <div class="selectors" id="selectors">
-        <label for="volume">Password Length: </label>
-        <input type="range" id="passwordlength" name="passwordlength" min="8" max="128"
-          oninput="passwordlengthfunc(this.value)" />
-        <output id="passwordvalue">68</output>
-        <div>
-          <input type="checkbox" id="Lowercase" name="Lowercase">
-          <label for="scales">Lowercase</label>
-        </div>
-        <div>
-          <input type="checkbox" id="Uppercase" name="Uppercase">
-          <label for="horns">Uppercase</label>
-        </div>
-        <div>
-          <input type="checkbox" id="Numeric" name="Numeric">
-          <label for="horns">Numeric</label>
-        </div>
-        <div>
-          <input type="checkbox" id="Special" name="Special">
-          <label for="Special">Special Characters</label>
+          <label for="volume">Password Length: </label>
+          <input type="range" id="passwordlength" name="passwordlength" min="8" max="128"
+            oninput="passwordlengthfunc(this.value)" />
+          <output id="passwordvalue">68</output>
+          <div>
+            <input type="checkbox" id="Lowercase" name="Lowercase" />
+            <label for="Lowercase">Lowercase</label>
+          </div>
+          <div>
+            <input type="checkbox" id="Uppercase" name="Uppercase">
+            <label for="Uppercase">Uppercase</label>
+          </div>
+          <div>
+            <input type="checkbox" id="Numeric" name="Numeric">
+            <label for="Numeric">Numeric</label>
+          </div>
+          <div>
+            <input type="checkbox" id="Special" name="Special">
+            <label for="Special">Special Characters</label>
+          </div>
+          <button id="generate2" class="btn2">Submit</button>
         </div>
       </div>
-      </div>
-      
+
     </div>
   </div>
   <script src="script.js"></script>
