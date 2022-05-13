@@ -1,13 +1,11 @@
-// Assignment Code
 const generateBtn = document.querySelector("#generate");
 const passwordBtn = document.querySelector("#generate2");
 
-// Function to display prompts
 function displaybtn() {
   const selectordisplay = document.querySelector(".selectors");
   selectordisplay.setAttribute("style", "display: block;");
 }
-// Write password to the #password input
+
 function writePassword() {
   const passlength = document.querySelector("#passwordvalue").value;
   const checklow = document.querySelector("#Lowercase").checked;
@@ -29,15 +27,12 @@ function writePassword() {
       if (checklow) {
         concatpassword = concatpassword + lowletters;
       };
-
       if (checkupp) {
         concatpassword = concatpassword + upletters;
       };
-
       if (checknum) {
         concatpassword = concatpassword + numbers;
       };
-
       if (checkspe) {
         concatpassword = concatpassword + specialchar;
       };
@@ -52,10 +47,8 @@ function writePassword() {
   }
 }
 
-// Add event listener to generate button
 generateBtn.addEventListener("click", displaybtn);
 passwordBtn.addEventListener("click", writePassword);
-
 
 function passwordlengthfunc(val) {
   document.querySelector("#passwordvalue").innerHTML = val;
