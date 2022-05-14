@@ -47,9 +47,9 @@ function writePassword() {
   }
 }
 
-generateBtn.addEventListener("click", displaybtn);
-passwordBtn.addEventListener("click", writePassword);
-
 function passwordlengthfunc(val) {
   document.querySelector("#passwordvalue").innerHTML = val;
 };
+
+generateBtn.addEventListener("click", displaybtn);
+passwordBtn.addEventListener("click", writePassword);
